@@ -13,7 +13,7 @@ ENV GO111MODULE=off
 COPY . .
 
 RUN CGO_ENABLED=0 go build -o /app .
-
+# here we just creating binary and not executing here, we are executing it in next below step.
 ###############################################################################
 # HERE STARTS THE MAGIC OF MULTI STAGE BUILD
 
