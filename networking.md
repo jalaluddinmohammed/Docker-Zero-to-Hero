@@ -1,3 +1,16 @@
+# Container Networking
+
+Scenario 1:  Conatiner 1 wants to Talk to Container 2. ( This is login container)
+Scenario 2. Isolation of containers.  ( This is payment container)
+
+
+![image](https://github.com/jalaluddinmohammed/Docker-Zero-to-Hero/assets/145260536/9c1c6eaf-0293-4550-ae3c-79ae875ff2c8)
+
+
+
+Container networking offers you both of these.
+
+
 # Docker Networking
 
 Networking allows containers to communicate with each other and with the host system. Containers run isolated from the host system
