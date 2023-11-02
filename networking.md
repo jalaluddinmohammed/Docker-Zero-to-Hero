@@ -1,6 +1,8 @@
 # Container Networking
 
 Scenario 1:  Conatiner 1 wants to Talk to Container 2. ( This is login container)
+
+
 Scenario 2. Isolation of containers.  ( This is payment container)
 
 Example: Any one who has access to login container shouldnt have access to payment container. Login is a basic container, payment is critical container.
