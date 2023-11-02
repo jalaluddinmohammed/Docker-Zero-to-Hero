@@ -2,8 +2,11 @@
 
 ## Problem Statement
 
-It is a very common requirement to persist the data in a Docker container beyond the lifetime of the container. However, the file system
-of a Docker container is deleted/removed when the container dies. 
+It is a very common requirement to persist(permanant store) the data in a Docker container beyond the lifetime of the container. However, the file system of a Docker container is deleted/removed when the container dies/down. All the logs files would be removed.
+
+![image](https://github.com/jalaluddinmohammed/Docker-Zero-to-Hero/assets/145260536/798f3441-5c85-4f6a-b7a4-9d42f2c127b2)
+
+Container can access the host CPU, memory etc.. but there is a way to access host file system  and store data on it, it can be acheieved using volumes and mount point.
 
 ## Solution
 
