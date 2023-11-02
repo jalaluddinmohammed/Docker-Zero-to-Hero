@@ -40,6 +40,13 @@ docker run -it -v <volume_name>:/data <image_name> /bin/bash
 This command will mount the volume <volume_name> to the /data directory in the container. Any data written to the /data directory
 inside the container will be persisted in the volume on the host file system.
 
+
+![image](https://github.com/jalaluddinmohammed/Docker-Zero-to-Hero/assets/145260536/21242105-34ca-4d7d-978d-a9e737bf8ec4)
+
+
+![image](https://github.com/jalaluddinmohammed/Docker-Zero-to-Hero/assets/145260536/83f871c2-2f62-4511-96ee-ee338554e714)
+
+
 ### Bind Directory on a host as a Mount
 
 Bind mounts also aims to solve the same problem but in a complete different way.
@@ -72,3 +79,8 @@ docker  --mount
 Above both commands are same, better to use --mount which is easy to understand.
 
 Bind mount are used for development only because when you deploy the container to PROD then there is not need to have same folder structure on the PROD system. So mainly for source code updates while doing developments then bind mounts are handy. When you update the source code on the docker host file system then an restart of the container helps to automatically replicate the data in the docker host file system to container own file system.
+
+To delete the volume, we need to stop the container, delete the container and then delete volume.
+
+also, when you create volume, the local path is automatically created by the host file system ( it can be s3 or remote file system on ec2)
+
