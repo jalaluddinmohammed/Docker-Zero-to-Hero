@@ -3,7 +3,7 @@
 Scenario 1:  Conatiner 1 wants to Talk to Container 2. ( This is login container)
 Scenario 2. Isolation of containers.  ( This is payment container)
 
-Any one has access to login container shouldnt have access to payment container.
+Example: Any one who has access to login container shouldnt have access to payment container. Login is a basic container, payment is critical container.
 
 
 ![image](https://github.com/jalaluddinmohammed/Docker-Zero-to-Hero/assets/145260536/9c1c6eaf-0293-4550-ae3c-79ae875ff2c8)
