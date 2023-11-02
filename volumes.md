@@ -70,3 +70,5 @@ docker -v <....>
 docker  --mount 
 
 Above both commands are same, better to use --mount which is easy to understand.
+
+Bind mount are used for development only because when you deploy the container to PROD then there is not need to have same folder structure on the PROD system. So mainly for source code updates while doing developments then bind mounts are handy. When you update the source code on the docker host file system then an restart of the container helps to automatically replicate the data in the docker host file system to container own file system.
