@@ -1,14 +1,16 @@
-# Docker Commands
+# Docker Commands Cheatsheet with Examples
 
-Some of the most commonly used docker commands are 
+##  docker images
 
-### docker images
+Lists Docker images on the host machine.
 
-Lists docker images on the host machine.
+docker images
 
 ### docker build
 
 Builds image from Dockerfile.
+
+docker build -t my_image:latest .
 
 ### docker run
 
@@ -18,6 +20,8 @@ There are many arguments which you can pass to this command for example,
 
 `docker run -d` -> Run container in background and print container ID
 `docker run -p` -> Port mapping
+
+docker run -d --name my_container -p 8080:80 my_image:latest
 
 use `docker run --help` to look into more arguments.
 
@@ -37,9 +41,13 @@ Starts a stopped container.
 
 Removes a stopped container.
 
+docker rmi my_image:latest
+
 ### docker rmi
 
 Removes an image from the host machine.
+
+docker rmi my_image:latest
 
 ### docker pull
 
@@ -53,6 +61,10 @@ Uploads an image to the configured registry.
 
 Run a command in a running container.
 
+docker exec -it my_container /bin/bash
+
 ### docker network
+
+docker network ls
 
 Manage Docker networks such as creating and removing networks, and connecting containers to networks.
