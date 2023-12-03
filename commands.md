@@ -33,9 +33,13 @@ Lists running containers on the host machine.
 
 Stops running container.
 
+docker stop my_container
+
 ### docker start
 
 Starts a stopped container.
+
+docker start my_container
 
 ### docker rm
 
@@ -53,9 +57,13 @@ docker rmi my_image:latest
 
 Downloads an image from the configured registry.
 
+docker pull nginx:latest
+
 ### docker push
 
 Uploads an image to the configured registry.
+
+docker push my_registry/my_image:latest
 
 ### docker exec
 
